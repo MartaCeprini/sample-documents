@@ -72,12 +72,21 @@
     </div>
     <div>&nbsp;</div>
     <div>
-      <input type="checkbox" id="proprietario" name="proprietario" checked="{{isProprietario}}">
+      {{#if isProprietario}}
+      <input type="checkbox" id="proprietario" name="proprietario" checked="checked">
+      {{else}}
+      <input type="checkbox" id="proprietario" name="proprietario">
+      {{/if}}
       <label for="scales">di essere proprietario delle unità immobiliari appresso indicate</label>
     </div>
     <div>&nbsp;</div>
     <div>
-      <input type="checkbox" id="impresaProprietaria" name="impresaProprietaria" checked="{{isImpresaProprietaria}}">
+      {{#if isImpresaProprietaria}}
+      <input type="checkbox" id="impresaProprietaria" name="impresaProprietaria" checked="checked">
+      {{else}}
+      <input type="checkbox" id="impresaProprietaria" name="impresaProprietaria">
+      {{/if}}
+      
       <label for="horns">che l’impresa è proprietaria delle unità immobiliari appresso indicate</label>
     </div>
     <div>&nbsp;</div>
